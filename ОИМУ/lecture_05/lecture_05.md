@@ -187,7 +187,7 @@ HSL, HSV, HSI или родственные модели часто исполь
 
 
 <div align="center">
-  <img src="https://github.com/bbkvsrg/lecture-notes/blob/main/%D0%9E%D0%98%D0%9C%D0%A3/lecture_05/images/l5_15.png" width="66%" title="Модель CMY"/>
+  <img src="https://github.com/bbkvsrg/lecture-notes/blob/main/%D0%9E%D0%98%D0%9C%D0%A3/lecture_05/images/l5_16.png" width="66%" title="Модель CMY"/>
   
   Рисунок 10 – Модель CMY
 </div>
