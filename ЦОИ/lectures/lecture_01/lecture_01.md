@@ -269,7 +269,7 @@
 R=\int_{380}^{720} C(\lambda)\overline{r}(\lambda)d\lambda
 ```
 
-где $$R$$ - значение отклика, $$C(\lambda)$$ - спектр света, попавшего на клетку, $$\overline{r}(\lambda)$$ - соответствующая типу клетки кривая чувствительности.
+где $R$ - значение отклика, $C(\lambda)$ - спектр света, попавшего на клетку, $\overline{r}(\lambda)$ - соответствующая типу клетки кривая чувствительности.
 
 Теперь представим, что цвет от одной точки реального объекта попадает на колбочки трех разных типов. Тогда можно записать три интеграла, описывающих создаваемые этой точкой отклики в трех разных колбочках.
 
@@ -287,9 +287,9 @@ B=\int_{380}^{720} C(\lambda)\overline{b}(\lambda)d\lambda
 
 ```math
 \displaylines{
-\int_{380}^{720} C^'(\lambda)\overline{r}(\lambda)d\lambda = \int_{380}^{720} C(\lambda)\overline{r}(\lambda)d\lambda \\
-\int_{380}^{720} C^'(\lambda)\overline{g}(\lambda)d\lambda = \int_{380}^{720} C(\lambda)\overline{g}(\lambda)d\lambda \\
-\int_{380}^{720} C^'(\lambda)\overline{b}(\lambda)d\lambda = \int_{380}^{720} C(\lambda)\overline{b}(\lambda)d\lambda
+\int_{380}^{720} C^{'}(\lambda)\overline{r}(\lambda)d\lambda = \int_{380}^{720} C(\lambda)\overline{r}(\lambda)d\lambda \\
+\int_{380}^{720} C^{'}(\lambda)\overline{g}(\lambda)d\lambda = \int_{380}^{720} C(\lambda)\overline{g}(\lambda)d\lambda \\
+\int_{380}^{720} C^{'}(\lambda)\overline{b}(\lambda)d\lambda = \int_{380}^{720} C(\lambda)\overline{b}(\lambda)d\lambda
 }
 ```
 
@@ -305,15 +305,15 @@ B=\int_{380}^{720} C(\lambda)\overline{b}(\lambda)d\lambda
 \displaylines{
 C_1=
 \begin{pmatrix}
-  R_1\overline{r} \\
-  G_1\overline{g} \\
-  B_1\overline{b}
+  R_1\cdot\overline{r} \\
+  G_1\cdot\overline{g} \\
+  B_1\cdot\overline{b}
 \end{pmatrix} \\
 C_2=
 \begin{pmatrix}
-  R_2\overline{r} \\
-  G_2\overline{g} \\
-  B_2\overline{b}
+  R_2\cdot\overline{r} \\
+  G_2\cdot\overline{g} \\
+  B_2\cdot\overline{b}
 \end{pmatrix}
 }
 ```
@@ -330,9 +330,9 @@ C_3=C_1+C_2
 \displaylines{
 C_3=
 \begin{pmatrix}
-  R_3\overline{r} \\
-  G_3\overline{g} \\
-  B_3\overline{b}
+  R_3\cdot\overline{r} \\
+  G_3\cdot\overline{g} \\
+  B_3\cdot\overline{b}
 \end{pmatrix} \\
 \begin{matrix}
   R_3=R_1+R_2 \\
