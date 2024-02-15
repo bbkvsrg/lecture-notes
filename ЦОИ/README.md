@@ -14,5 +14,4 @@
 ## Практики
 
 1. [Основы Python и Jupyter notebook](practices/practice_01/practice_01.ipynb)
-
-
+2. [Работа с изображениями](practices/practice_02/practice_02.ipynb)
