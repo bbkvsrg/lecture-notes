@@ -6,7 +6,13 @@
 ## Полезные ссылки и материалы
 1. [Richard Szeliski, Computer Vision, Springer 2011](https://link.springer.com/book/10.1007/978-1-84882-935-0) - хорошая книга о компьютерном зрении (единственная трудность: она на английском)
 
-## Порядок лекций
+## Лекции
+
 1. [Зрительная система человека и математическая модель цвета](lectures/lecture_01/lecture_01.md)
 2. [Цифровая фотография и ее технические особенности](lectures/lecture_02/lecture_02.md)
+
+## Практики
+
+1. [Основы Python и Jupyter notebook](practices/practice_01/practice_01.ipynb)
+
 
