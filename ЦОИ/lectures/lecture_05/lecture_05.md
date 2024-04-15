@@ -51,10 +51,10 @@ $$
     \exp\left(-\displaystyle\frac{(x - \mu)^2}{2\sigma_2^2}\right), & x \geq \mu \\
   \end{cases} \\\\
   \begin{align*}
-    \overline{x}(\lambda) = &\; 1.056 \cdot g(\lambda; 599.8, 37.9, 31.0) + 0.362 \cdot g(\lambda; 442.0, 16.0, 26.7) -\\
+    \overline{x}(\lambda) = &\quad 1.056 \cdot g(\lambda; 599.8, 37.9, 31.0) + 0.362 \cdot g(\lambda; 442.0, 16.0, 26.7) -\\
     &- 0.065 \cdot g(\lambda; 501.1, 20.4, 26.2)\\
-    \overline{y}(\lambda) = &\; 0.821 \cdot g(\lambda; 568.8, 46.9, 40.5) + 0.286 \cdot g(\lambda; 530.9, 16.3, 31.1) \\
-    \overline{z}(\lambda) = &\; 1.217 \cdot g(\lambda; 437.0, 11.8, 36.0) + 0.681 \cdot g(\lambda; 459.0, 26.0, 13.8)
+    \overline{y}(\lambda) = &\quad 0.821 \cdot g(\lambda; 568.8, 46.9, 40.5) + 0.286 \cdot g(\lambda; 530.9, 16.3, 31.1) \\
+    \overline{z}(\lambda) = &\quad 1.217 \cdot g(\lambda; 437.0, 11.8, 36.0) + 0.681 \cdot g(\lambda; 459.0, 26.0, 13.8)
   \end{align*}
 \end{matrix*}
 $$
@@ -112,7 +112,7 @@ $$
     0.4124564 & 0.3575761 & 0.1804375 \\
     0.2126729 & 0.7151522 & 0.0721750 \\
     0.0193339 & 0.1191920 & 0.9503041
-  \end{bmatrix*} 
+  \end{bmatrix*}
   \begin{bmatrix}
     R_{linear} \\
     G_{linear} \\
@@ -141,7 +141,7 @@ $$
   C_{sRGB} = 
     \begin{cases}
       12.92 \cdot C_{linear}, & C_{linear} \leq 0.0031308 \\
-      1.055 \cdot C_{linear}^{1/_\gamma} - 0.055, & C_{linear} > 0.0031308
+      1.055 \cdot C_{linear}^{1/\gamma} - 0.055, & C_{linear} > 0.0031308
     \end{cases}, \quad \gamma = 2.4, C \in \{R, G, B\}
 \end{matrix*}
 $$
@@ -179,15 +179,15 @@ $$
 
 $$
 \begin{matrix*}[l]
-  X = X_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} + \frac{a^*}{500}\right) \\
+  X = X_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} + \displaystyle\frac{a^* }{500}\right) \\
   Y = Y_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116}\right) \\
-  Z = Z_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} - \frac{b^*}{200}\right) \\
+  Z = Z_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} - \displaystyle\frac{b^* }{200}\right) \\
   f^{-1}(t) = 
     \begin{cases}
       t^3, & t > \delta \\
       3 \delta^2 \left(t - \displaystyle\frac{4}{29}\right) & t \leq \delta
     \end{cases}, \\
-    \delta = \displaystyle\frac{6}{29} \\\\
+    \delta = \displaystyle\frac{6}{29}
 \end{matrix*}
 $$
 
@@ -376,9 +376,9 @@ $$
 
 $$
 \begin{matrix*}[l]
-  X = X_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} + \frac{a^*}{500}\right) \\
+  X = X_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} + \frac{a^* }{500}\right) \\
   Y = Y_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116}\right) \\
-  Z = Z_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} - \frac{b^*}{200}\right) \\
+  Z = Z_n \cdot f^{-1}\left(\displaystyle\frac{L^* + 16}{116} - \frac{b^* }{200}\right) \\
   f^{-1}(t) = 
     \begin{cases}
       t^3, & t > \delta \\
@@ -399,7 +399,7 @@ $$
 Именно поэтому одним из стандартных способов спрогнозировать или оценить ощущаемую человеком цветовую разность между двумя цветами является использование $CIE$ $Lab$ и специально рассчитываемой величины цветовой разности. Изначально, при создании $CIE$ $Lab$, для определения цветовой разницы использовалось простое евклидово расстояние в пространстве:
 
 $$
-\Delta E_{ab}^* = \sqrt{\left(L_2^* - L_1^*\right)^2 + \left(a_2^* - a_1^*\right)^2 + \left(b_2^* - b_1^*\right)^2}
+\Delta E_{ab}^* = \sqrt{\left(L_2^* - L_1^* \right)^2 + \left(a_2^* - a_1^* \right)^2 + \left(b_2^* - b_1^* \right)^2}
 $$
 
 $\Delta E_{ab}^* \approx 2.3$ примерно соответствует минимально различимому для человеческого глаза отличию между цветами.
@@ -407,7 +407,7 @@ $\Delta E_{ab}^* \approx 2.3$ примерно соответствует мин
 С момента представления этого инструмента в 1976 году способ оценивания претерпел пару уточняющих редакций. $\Delta E$ редакции 1994 года (задавалось в цветовом пространстве $LCH$ ($L^*C^*h^*$):
 
 $$
-\Delta E_{94}^* = \sqrt{\left(\displaystyle\frac{L_2^* - L_1^*}{K_L}\right)^2 + \left(\displaystyle\frac{C_2^* - C_1^*}{1 + K_1C_1^*}\right)^2 + \left(\displaystyle\frac{h_2^* - h_1^*}{1 + K_2C_1^*}\right)^2}
+\Delta E_{94}^* = \sqrt{\left(\displaystyle\frac{L_2^* - L_1^* }{K_L}\right)^2 + \left(\displaystyle\frac{C_2^* - C_1^* }{1 + K_1C_1^* }\right)^2 + \left(\displaystyle\frac{h_2^* - h_1^* }{1 + K_2C_1^* }\right)^2}
 $$
 
 где весовой коэффициент $K$ зависит от области применения:
@@ -429,8 +429,8 @@ $$
 $$
 \begin{matrix*}[l]
   \Delta E_{00}^* = \sqrt{\left(\displaystyle\frac{\Delta L'}{S_L}\right)^2 + \left(\displaystyle\frac{\Delta C'}{S_C}\right)^2 + \left(\displaystyle\frac{\Delta H'}{S_H}\right)^2 + R_T\displaystyle\frac{\Delta C'}{S_C}\frac{\Delta H'}{S_H}} \\
-  \overline L = \displaystyle\frac{L_1^* + L_2^*}{2} \\
-  \overline C = \displaystyle\frac{C_1^* + C_2^*}{2} \\
+  \overline L = \displaystyle\frac{L_1^* + L_2^* }{2} \\
+  \overline C = \displaystyle\frac{C_1^* + C_2^* }{2} \\
   a_1' = a_1 + \displaystyle\frac{a_1}{2}\left(1 - \displaystyle\frac{1}{2}\sqrt{\displaystyle\frac{\overline C^7}{\overline C^7 + 25^7}}\right) \\
   a_2' = a_2 + \displaystyle\frac{a_2}{2}\left(1 - \displaystyle\frac{1}{2}\sqrt{\displaystyle\frac{\overline C^7}{\overline C^7 + 25^7}}\right) \\
   b_1' = b_1 + \displaystyle\frac{b_1}{2}\left(1 - \displaystyle\frac{1}{2}\sqrt{\displaystyle\frac{\overline C^7}{\overline C^7 + 25^7}}\right) \\
@@ -439,8 +439,8 @@ $$
   C_2' = \sqrt{a_2'^2 + b_2'^2} \\
   \overline C = \displaystyle\frac{C_1' + C_2'}{2} \\
   \Delta C' = C_1' - C_2' \\
-  h_1' = \arctg\left(\displaystyle\frac{b_1}{a_1'}\right) \bmod 2\pi \\
-  h_2' = \arctg\left(\displaystyle\frac{b_2}{a_2'}\right) \bmod 2\pi \\
+  h_1' = \arctan\left(\displaystyle\frac{b_1}{a_1'}\right) \bmod 2\pi \\
+  h_2' = \arctan\left(\displaystyle\frac{b_2}{a_2'}\right) \bmod 2\pi \\
   \Delta h' = 
     \begin{cases}
       h_2' - h_1' & |h_1' - h_2'| \leq \pi \\
